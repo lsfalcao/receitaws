@@ -7,6 +7,8 @@ module Receitaws
     # Retonar um obejto do tipo Receitaws::Cnpj
     def self.executar cnpj
 
+      cnpj = cnpj.to_s.gsub(/[^0-9A-Za-z]/, '')
+
       response = self.build_request self.endpoint(cnpj), "get"
 
       begin

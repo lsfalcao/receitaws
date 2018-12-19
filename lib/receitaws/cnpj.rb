@@ -9,6 +9,7 @@ module Receitaws
       if result.nil?
         @status = :error
         @message = "Timeout"
+        return self
       end
 
       if result["status"] == "ERROR"
@@ -42,6 +43,7 @@ module Receitaws
       end
       @cnaes = @atividades.collect{|a| a[:code].to_s.gsub(/[^0-9A-Za-z]/, '')}
 
+      return self
     end
 
   end

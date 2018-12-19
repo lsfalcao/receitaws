@@ -59,7 +59,7 @@ Será retornado um objeto do tipo **Receitaws::Cnpj** descrito abaixo.
 
 
 ```ruby
-cnpj =  = Receitaws::ConsultarCnpj.executar 27865757000102
+cnpj = Receitaws::ConsultarCnpj.executar 27865757000102
 ```
 
 Verificar se se a consulta foi realizada com sucesso.
@@ -72,11 +72,14 @@ cnpj.status == :error
 #
 # Mensagem explicativa indicando erro.
 cnpj.message
+# Possíveis mensagens de retorno:
+# "Timeout"
+# "CNPJ inválido"
+# "CNPJ rejeitado pela Receita Federal"
 
 #
 # Consulta realizada com sucesso
 cnpj.status == :ok
-
 
 #
 # LIsta de atributos disponíveis

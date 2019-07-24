@@ -7,11 +7,11 @@ Gem::Specification.new do |spec|
   spec.name                   = "receitaws"
   spec.version                = Receitaws::Version::STRING
   spec.platform               = Gem::Platform::RUBY
-  spec.authors                = ["QW3 Software & Marketing"]
-  spec.email                  = ["contato@qw3.com.br"]
+  gem.authors                 = ["Leandro Falcão"]
+  gem.email                   = ["le.sfalcao@gmail.com"]
   spec.summary                = "Gem ReceitaWS API - Consulta de Dados de CNPJ"
   spec.description            = "Uma Gem simples para recuperação de informações de empresas através de seu CNPJ utilizando Webservice da ReceitaWS - https://receitaws.com.br/ versão Comercial. Acreditamos que estas informações devem estar acessíveis a qualquer indivíduo ou empresa, e sem nenhum custo."
-  spec.homepage               = "https://github.com/qw3/receitaws"
+  spec.homepage               = "https://github.com/lsfalcao/receitaws"
   spec.license                = "MIT"
 
   spec.files                  = `git ls-files`.split($/)
